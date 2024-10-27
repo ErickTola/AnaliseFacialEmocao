@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensão comunitária</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Extensão comunitária</h1>
+        </div>
+    </header>
+    
+
+    <section>
+      
+        <div class="container-video">
+
+            <div class="imagem-lado">
+                <img  class="video" src="{{ url_for('video')}}">
+                <img class="video" src="{{ url_for('resultado') }}">
+            </div>
+
+            <form method="post" action="/">
+              <input class="buttom" type="submit" name="Analzize" value="Analizar">
+            </form>
+            <div class="txt">
+                <h2>Uma Breve explicação:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, saepe. Quisquam, ipsam aperiam quidem quos sit aspernatur repellendus perspiciatis. In tempora harum cumque error minima. Recusandae dicta ullam alias aliquam!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ab tempora dolor ratione culpa, dolorum mollitia pariatur aut, amet enim ea possimus ex aspernatur, totam rerum. Libero repellendus sequi hic.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+
+            <p>
+                &copy; trabalho de extensão comunitária UNIP
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
